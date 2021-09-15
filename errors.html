@@ -1,19 +1,36 @@
+<!DOCTYPE html>
+<!--
 
-<!doctype html>
-<html data-n-head-ssr>
-  <head >
-    <title>Oh No!</title><meta data-n-head="ssr" charset="utf-8">
-<meta data-n-head="ssr" name="viewport" content="width=device-width, initial-scale=1">
-<meta data-n-head="ssr" data-hid="description" name="description" content="Biznet Gio Nusantara Portal">
-<meta data-n-head="ssr" name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"><link data-n-head="ssr" rel="icon" type="image/x-icon" href="https://portal.biznetgio.com/favicon.png">
+This template can be modified and used to customize the error page. To replace
+the error page, set master configuration option oauthConfig.templates.error to
+the path of the template file.
+
+oauthConfig:
+  templates:
+    error: templates/error-template.html
+
+The Error field contains an error message, which is human readable, and subject to change.
+Default error messages are intentionally generic to avoid leaking information about authentication errors.
+
+The ErrorCode field contains a programmatic error code, which may be (but is not limited to):
+- mapping_claim_error
+- mapping_lookup_error
+- authentication_error
+- grant_error
+-->
+<html>
+  <head>
+    <title>Error</title>
+    <style type="text/css">
+      body {
+        font-family: "Open Sans", Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        margin: 15px;
+      }
+    </style>
+ 
 
   <style type="text/css">
-  /*!
-   * Bootstrap v3.3.5 (http://getbootstrap.com)
-   * Copyright 2011-2015 Twitter, Inc.
-   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
-   */
-  /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
   html {
     font-family: sans-serif;
     -ms-text-size-adjust: 100%;
@@ -113,11 +130,11 @@
   <body >
 
     <div>
-      <h1><img src="img/logo-biznetgio-beta.svg"> Application is not available</h1>
+      <h1><img src="https://isnuryusuf.github.io/neo-k8s-bootstrap/img/logo-biznetgio-beta.svg"> Application is not available</h1>
       <p>The application is currently not serving requests at this endpoint. It may not have been started or is still starting.</p>
 
 
-      <div class="alert alert-info"> <img src="img/illustration-error-404.svg">
+      <div class="alert alert-info"> <img src="https://isnuryusuf.github.io/neo-k8s-bootstrap/img/illustration-error-404.svg">
         <p class="info"> 
           Possible reasons you are seeing this page:
         </p>
